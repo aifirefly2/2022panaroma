@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/disque.png" />
+    <title>A-Frame</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/pannellum.css">
+    <script src="assets/jquery.min.js"></script>
+    <script src="assets/pannellum.js"></script>
+</head>
+
+<body>
+    <div id="panorama">
+
+    </div>
+    <script>
+        pannellum.viewer('panorama', {
+            "default": {
+                "firstScene": "24",
+                "sceneFadeDuration": 1000,
+                "autoLoad": true,
+                "autoRotate": -2
+            },
+
+            "scenes": {
+                "24": {
+                    "title": "A-Frame",
+                    "type": "equirectangular",
+                    "panorama": "images/360.jpg",
+                },
+
+            }
+        });
+
+    </script>
+    </div>
+    </div>
+
+</body>
+
+</html>
